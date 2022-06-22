@@ -39,7 +39,7 @@ class Busquedas {
     try {
       // Petición http
       const intance = axios.create({
-        baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${lugar}.json`,
+        baseURL: 
         params: this.paramsMapbox,
       });
 
@@ -58,7 +58,7 @@ class Busquedas {
   async climaLugar(lat, lon) {
     try {
       const instance = axios.create({
-        baseURL: `https://api.openweathermap.org/data/2.5/weather`,
+        baseURL: 
         params: { ...this.paramsWeather, lat, lon },
       });
 
